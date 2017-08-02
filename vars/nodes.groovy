@@ -1,18 +1,17 @@
 class nodes implements Serializable {
-  private List<String> nodes = new ArrayList<String>()
+  private List<String> nodeList = new ArrayList<String>()
 
   nodes() {
     Jenkins.instance.nodes.each { node ->
-      nodes.append(node.name)
+      this.nodeList.append(node.name)
     }
-    this.nodes = nodes
   }
 
   List<String> getNodes() {
-    return this.nodes
+    return this.nodeList
   }
 
   boolean nodeExists(String name) {
-    return this.nodes.contains(name)
+    return this.nodeList.contains(name)
   }
 }
