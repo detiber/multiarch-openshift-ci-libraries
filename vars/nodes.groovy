@@ -2,7 +2,6 @@ class nodes implements Serializable {
   private List<String> nodes = new ArrayList<String>()
 
   nodes() {
-    nodes = new List<String>()
     Jenkins.instance.nodes.each { node ->
       nodes.append(node.name)
     }
