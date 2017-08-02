@@ -1,5 +1,5 @@
 class nodes implements Serializable {
-  private List<String> nodes
+  private List<String> nodes = new ArrayList<String>()
 
   nodes() {
     nodes = new List<String>()
