@@ -3,7 +3,7 @@ class nodes implements Serializable {
 
   nodes() {
     Jenkins.instance.nodes.each { node ->
-      this.nodeList.append(node.name)
+      this.nodeList.add(node.name)
     }
   }
 
