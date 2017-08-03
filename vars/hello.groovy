@@ -12,7 +12,7 @@ class hello implements Serializable {
     def getName() {
         name
     }
-    def greeting(message) {
+    def greeting() {
         echo "Hello, ${name}!"
     }
 }
